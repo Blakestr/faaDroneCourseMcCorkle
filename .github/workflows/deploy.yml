@@ -1,3 +1,4 @@
+
 name: Deploy Quartz site to GitHub Pages
 
 on:
@@ -44,6 +45,43 @@ jobs:
         run: npx quartz plugin install
       - name: Build Quartz
         run: npx quartz build
+
+      - name: Fix tag URLs
+        run: |
+          python3 <<'PY'
+          import re
+          from pathlib import Path
+          from urllib.parse import urlsplit
+
+          base = "/faaDroneCourseMcCorkle"
+
+          def fix_tag(match):
+              anchor = match.group(0)
+              cls = re.search(r'\bclass=(["\'])(.*?)\1', anchor)
+              if not cls or "tag-link" not in cls.group(2).split():
+                  return anchor
+              href = re.search(r'\bhref=(["\'])(.*?)\1', anchor)
+              if not href:
+                  return anchor
+              url = urlsplit(href.group(2))
+              if url.scheme or url.netloc:
+                  return anchor
+              tag = re.search(r'(?:^|/)tags/(.+)$', url.path)
+              if not tag:
+                  return anchor
+              fixed = url._replace(path=base + "/tags/" + tag.group(1)).geturl()
+              return anchor[:href.start(2)] + fixed + anchor[href.end(2):]
+
+          count = 0
+          for file in Path("public").rglob("*.html"):
+              old = file.read_text(encoding="utf-8")
+              new = re.sub(r'<a\b[^>]*>', fix_tag, old)
+              if old != new:
+                  file.write_text(new, encoding="utf-8")
+                  count += 1
+          print(f"Corrected tag links in {count} pages.")
+          PY
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
