@@ -2,7 +2,7 @@
 publish: true
 title: Chapter 1 - Loading and Performance
 created: 2026-11-17T04:17:47.524Z
-modified: 2026-11-17T13:46:40.159Z
+modified: 2026-11-17T20:23:39.806Z
 ---
 
 #### Ch 1. Loading and Performance
@@ -18,7 +18,8 @@ modified: 2026-11-17T13:46:40.159Z
 
 ## Aerodynamics
 
-_Angle of Attack_-  the acute angle between an aircraft wing's **chord line** (an imaginary straight line from the leading edge to the trailing edge) and the **relative wind** (the direction of the airflow meeting the wing. #FAA/Definition
+#FAA/Definition
+_Angle of Attack_-  the acute angle between an aircraft wing's **chord line** (an imaginary straight line from the leading edge to the trailing edge) and the **relative wind** (the direction of the airflow meeting the wing.
 
 ![[Attachments/Pasted image 20261117084621.png]]
 
