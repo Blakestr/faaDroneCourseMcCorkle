@@ -82,10 +82,133 @@ jobs:
           print(f"Corrected tag links in {count} pages.")
           PY
 
+    
+      - name: Generate FAA Study Index
+        run: |
+          python3 -m venv "$RUNNER_TEMP/faa-index"
+          source "$RUNNER_TEMP/faa-index/bin/activate"
+          pip install beautifulsoup4==4.14.3
+          python3 <<'PY'
+          from pathlib import Path
+          from collections import defaultdict
+          from urllib.parse import quote, urlsplit, unquote
+          from bs4 import BeautifulSoup
+          import re
+
+          root = Path('public')
+          base = '/faaDroneCourseMcCorkle/'
+          allowed = {'exam','todoreview','trap','formula','safety','practical','definition'}
+          pattern = re.compile(r'(?:^|/)tags/faa/([a-z]+)(?:/index)?(?:\.html)?/?$', re.I)
+          labels = {'todoreview': 'TodoReview'}
+          index = defaultdict(lambda: defaultdict(list))
+
+          def clean(text):
+              return ' '.join(re.sub(r'#?faa/(?:'+'|'.join(sorted(allowed))+r')\b', '', text, flags=re.I).split())
+
+          def route(path):
+              return base + quote(path.relative_to(root).as_posix(), safe='/')
+
+          def callout_title(block):
+              title = block.select_one('.callout-title-inner, .callout-title')
+              return clean(title.get_text(' ', strip=True)) if title else 'Callout'
+
+          for page in sorted(root.rglob('*.html')):
+              rel = page.relative_to(root)
+              if rel.parts[0] in {'tags', 'static'} or page.name == '404.html':
+                  continue
+              soup = BeautifulSoup(page.read_text(encoding='utf-8'), 'html.parser')
+              article = soup.find('article')
+              if article is None:
+                  continue
+              heading = soup.select_one('.article-title') or soup.find('h1')
+              chapter = heading.get_text(' ', strip=True) if heading else page.stem
+              answers = {}
+              for block in article.select('.callout'):
+                  if callout_title(block).lower() == 'answer':
+                      answers[id(block)] = len(answers) + 1
+              blocks = {}
+              ids = {el['id'] for el in soup.select('[id]')}
+              for a in article.select('a.tag-link[href]'):
+                  if a.find_parent(class_='tags') or a.find_parent(['pre','code']):
+                      continue
+                  match = pattern.search(unquote(urlsplit(a['href']).path))
+                  if not match or match[1].lower() not in allowed:
+                      continue
+                  tag = match[1].lower()
+                  block = a.find_parent(class_='callout')
+                  if block is not None:
+                      title = callout_title(block)
+                      if id(block) in answers:
+                          title = f'Practice Question {answers[id(block)]}'
+                  else:
+                      block = a.find_parent(['p','li','h2','h3','h4','h5','h6']) or a
+                      title = clean(block.get_text(' ', strip=True)) or 'Tagged material'
+                      title = title[:100]
+                  key = id(block)
+                  if key not in blocks:
+                      anchor = block.get('id')
+                      if not anchor:
+                          n = len(blocks) + 1
+                          anchor = f'faa-study-{n}'
+                          while anchor in ids:
+                              n += 1
+                              anchor = f'faa-study-{n}'
+                          ids.add(anchor)
+                          block['id'] = anchor
+                      blocks[key] = (title, anchor, set())
+                  title, anchor, seen = blocks[key]
+                  if tag not in seen:
+                      seen.add(tag)
+                      index[tag][(chapter, route(page))].append((title, anchor))
+              if blocks:
+                  page.write_text(str(soup), encoding='utf-8')
+
+          for tag, chapters in sorted(index.items()):
+              candidates = [root/'tags'/'faa'/f'{tag}.html', root/'tags'/'faa'/tag/'index.html']
+              existing = [p for p in candidates if p.is_file()]
+              if not existing:
+                  p = candidates[0]
+                  p.parent.mkdir(parents=True, exist_ok=True)
+                  p.write_text('<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>FAA Study Index</title></head><body style="max-width:800px;margin:2rem auto;padding:1rem;font-family:system-ui"><article></article></body></html>', encoding='utf-8')
+                  existing = [p]
+              count = sum(len(rows) for rows in chapters.values())
+              for page in existing:
+                  soup = BeautifulSoup(page.read_text(encoding='utf-8'), 'html.parser')
+                  host = soup.find('article') or soup.select_one('.center') or soup.body
+                  old = soup.find(id='faa-study-index')
+                  if old:
+                      old.decompose()
+                  section = soup.new_tag('section', id='faa-study-index')
+                  h = soup.new_tag('h2')
+                  h.string = f'FAA / {labels.get(tag, tag.capitalize())} — Study Index'
+                  section.append(h)
+                  p = soup.new_tag('p')
+                  p.string = f'{count} tagged sections across {len(chapters)} notes.'
+                  section.append(p)
+                  for (chapter, url), rows in chapters.items():
+                      h = soup.new_tag('h3')
+                      h.string = chapter
+                      section.append(h)
+                      ul = soup.new_tag('ul')
+                      for title, anchor in rows:
+                          li = soup.new_tag('li')
+                          a = soup.new_tag('a', href=url+'#'+quote(anchor, safe=''))
+                          a['data-no-spa'] = 'true'
+                          a.string = title
+                          li.append(a)
+                          ul.append(li)
+                      section.append(ul)
+                  host.insert(0, section)
+                  page.write_text(str(soup), encoding='utf-8')
+              print(f'FAA/{tag}: {count} sections in {len(chapters)} notes')
+          print(f'FAA study index: {len(index)} tag pages updated')
+          PY
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
+
 
   deploy:
     needs: build
