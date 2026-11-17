@@ -2,22 +2,14 @@
 publish: true
 title: FAA Course Notes McCorkle
 created: 2026-11-17T00:43:05.305Z
-modified: 2026-11-17T01:47:15.063Z
----
-
----
-
-title: FAA Drone Pilot Study Guide
-
+modified: 2026-11-17T01:59:31.425Z
 ---
 
 # FAA Drone Pilot Study Guide
 
-Welcome to my FAA Remote Pilot study guide.
+Hey guys -  this is the notes I've taking during the course - I am normally uploading them chapter at a time.  I've tried to attach the actual useful images from the course, so you don't just have to open up the video to review a concept.
 
-These notes are organized into chapters covering the
-principles of flight, aircraft operations, airspace,
-weather, regulations, and safety.
+If anyone has anything else they find useful send it to me and I'll add it here somewhere easy to find.
 
 ## Course Chapters
 
