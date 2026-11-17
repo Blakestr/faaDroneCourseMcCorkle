@@ -1,8 +1,13 @@
 ---
-publish: true
 title: Chapter 1. Loading and Performance
-created: 2026-11-10T18:20:44.069Z
-modified: 2026-11-17T03:27:12.450Z
+publish: true
+tags:
+  - FAA/Definition
+  - FAA/Exam
+  - FAA/Formula
+  - FAA/Trap
+  - FAA/Safety
+  - FAA/Practical
 ---
 
 #### Ch 1. Loading and Performance
