@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Chapter 2. Airport Operations
-created: 2026-11-17T04:09:57.083Z
+created: 2026-11-17T04:10:33.263Z
 modified: 2026-11-17T04:10:33.263Z
 ---
 
