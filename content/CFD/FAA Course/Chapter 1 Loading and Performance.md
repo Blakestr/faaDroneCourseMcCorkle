@@ -2,7 +2,7 @@
 publish: true
 title: Chapter 1. Loading and Performance
 created: 2026-11-10T18:20:44.069Z
-modified: 2026-11-17T03:40:17.758Z
+modified: 2026-11-17T04:07:18.109Z
 ---
 
 #### Ch 1. Loading and Performance
@@ -205,6 +205,3 @@ Typical FAA Questions
 
 > [!tip]- Answer #FAA/Exam #FAA/Trap
 > C - exceeds its critical angle of attack
-
-Tag test: #FAA/Definition
-I did a test here for the FAA Definition tag
