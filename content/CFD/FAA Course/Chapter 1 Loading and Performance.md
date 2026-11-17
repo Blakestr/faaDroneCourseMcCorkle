@@ -1,11 +1,13 @@
 ---
 publish: true
-title: Chapter 1. Loading and Performance
+title: Chapter 1 - Loading and Performance
 created: 2026-11-10T18:20:44.069Z
-modified: 2026-11-17T04:07:18.109Z
+modified: 2026-11-17T04:17:47.524Z
 ---
 
 #### Ch 1. Loading and Performance
+
+## RPIC Responsibilities
 
 > [!note]+ RPIC Responsibilities #FAA/Safety #FAA/Practical
 > RPIC (Remote Pilot in Command) responsibilities:
@@ -14,11 +16,17 @@ modified: 2026-11-17T04:07:18.109Z
 > - Verifies "weight and balance" condition
 > - Must comply with manufacturer's W & B specs and restrictions (if available)
 
+## Aerodynamics
+
+### Axes of Rotation
+
 > [!note]+ Axes of Rotation #FAA/Definition
 >
 > - **Roll** (longitudinal) — _ailerons_
 > - **Pitch** (lateral) — _elevators_
 > - **Yaw** (vertical) — _rudder_
+
+### Forces of Flight
 
 > [!info]+ Forces of Flight #FAA/Definition
 > ![[Attachments/Pasted image 20261110155115.png]]
@@ -30,6 +38,8 @@ modified: 2026-11-17T04:07:18.109Z
 > **Counteracts weight.**
 >
 > In straight-and-level flight, lift and weight are **EQUAL**.
+
+### Principles of Lift
 
 > [!info]+ Principles of LIFT #FAA/Definition
 > Angle of attack and relative wind interact with flight path.
@@ -54,6 +64,8 @@ modified: 2026-11-17T04:07:18.109Z
 > - **Bernoulli's Principle** (biggest portion) — "When a pipe is restricted, speed increases, pressure decreases."
 >
 > ![[Attachments/Pasted image 20261110155103.png]]
+
+### Weight, Thrust and Drag
 
 > [!info]+ Weight #FAA/Definition
 > Result of gravity.
@@ -85,6 +97,8 @@ modified: 2026-11-17T04:07:18.109Z
 >
 > **Stall** — when airfoil reaches critical angle of attack, airflow separates and lift decreases, leading to nose dropping.
 
+## Load Factor
+
 > [!danger]+ Load Factor #FAA/Definition #FAA/Safety #FAA/Trap
 > _Load Factor_ — a representation of the acceleration of gravity, aka **RESULTANT LOAD**.
 >
@@ -100,6 +114,8 @@ modified: 2026-11-17T04:07:18.109Z
 >
 > ![[Attachments/Pasted image 20261111112311.png]]
 
+## Stability
+
 > [!info]+ Stability #FAA/Definition
 > _Stability_ — the ability of an aircraft to **RETURN TO THE ORIGINAL FLIGHT PATH** after being disturbed.
 >
@@ -110,6 +126,10 @@ modified: 2026-11-17T04:07:18.109Z
 > **Dynamic Stability** — aircraft's **RESPONSE OVER TIME** when disturbed.
 >
 > ![[Attachments/Pasted image 20261111130704.png]]
+
+## Weight and Balance
+
+### Center of Gravity
 
 > [!caution]+ Factors Affecting Performance #FAA/Practical #FAA/Definition #FAA/Formula
 >
@@ -130,13 +150,15 @@ modified: 2026-11-17T04:07:18.109Z
 >
 >   ![[Attachments/Pasted image 20261116123814.png]]
 
+### Moving CG Location
+
 > [!danger] Danger+ Moving CG Location (POTENTIAL EXAM QUESTION ) #FAA/Exam #FAA/Safety
 >
 > When an object is shifted from one location to another, it will affect CG Location.
 >
 > Putting to much weight aft or forward could EXCEED THE CG LIMITS, which can result in dangerous altitudes.
 >
-> Always ensure equipment is loaded in a way that negatively affects the CG Location
+> Always ensure equipment is NOT loaded in a way that negatively affects the CG Location
 >
 > ![[Attachments/Pasted image 20261116125143.png]]
 >
@@ -150,6 +172,8 @@ modified: 2026-11-17T04:07:18.109Z
 >
 > ![[Attachments/Pasted image 20261116131148.png]]
 
+### Exceeding CG Limits
+
 > [!question]+  Exceeding CG Limits #FAA/Safety
 >
 > >
@@ -160,6 +184,10 @@ modified: 2026-11-17T04:07:18.109Z
 >
 > - Too far **forward** : the airplane won't get off the ground
 > - Too far aft: The aircraft becomes longitudinally unstable, may stall shortly after takeoff, and may be incapable of recovering from a stall.
+
+## Aircraft Performance
+
+### Environmental and Operational Factors
 
 > [!tip]+ Other Factors Affecting Performance #FAA/Practical #FAA/Safety
 > **Altitude**
@@ -189,17 +217,25 @@ modified: 2026-11-17T04:07:18.109Z
 > - Slope
 > - Surface Wind
 
+## FAA Practice Questions
+
 Typical FAA Questions
+
+### Question 1
 
 ![[Attachments/Pasted image 20261116134507.png]]
 
 > [!tip]- Answer #FAA/Exam #FAA/Trap
 > C - Angle off attack won't change due to weight
 
+### Question 2
+
 ![[Attachments/Pasted image 20261116134547.png]]
 
 > [!tip]- Answer #FAA/Exam #FAA/Formula
 > C - 33 x 1.154 = 38
+
+### Question 3
 
 ![[Attachments/Pasted image 20261116134651.png]]
 
