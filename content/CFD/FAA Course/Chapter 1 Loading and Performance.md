@@ -2,7 +2,7 @@
 publish: true
 title: Chapter 1. Loading and Performance
 created: 2026-11-10T18:20:44.069Z
-modified: 2026-11-17T01:47:31.593Z
+modified: 2026-11-17T02:12:42.076Z
 ---
 
 #### Ch 1. Loading and Performance
@@ -159,7 +159,7 @@ modified: 2026-11-17T01:47:31.593Z
 > If you load an airplane in such a way the CG is out of limit or OUTSIDE THE ENVELOPE, it won't perform properly
 >
 > - Too far **forward** : the airplane won't get off the ground
-> - Too far **aft** the airplane will stall as soon as it gets airborne
+> - Too far aft: The aircraft becomes longitudinally unstable, may stall shortly after takeoff, and may be incapable of recovering from a stall.
 
 > [!tip]+ Other Factors Affecting Performance
 > **Altitude**
