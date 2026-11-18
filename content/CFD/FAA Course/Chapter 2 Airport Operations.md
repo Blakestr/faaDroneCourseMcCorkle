@@ -2,8 +2,12 @@
 publish: true
 title: Chapter 2. Airport Operations
 created: 2026-11-17T04:09:57.083Z
-modified: 2026-11-18T21:40:21.358Z
+modified: 2026-11-18T21:52:21.132Z
 ---
+
+> [!example]+ Video — Traffic Pattern (3D View) <a href="https://lms.pilotinstitute.com/class/79/lesson/3976" >▶ Watch the 3D demonstration</a>
+>
+> You need to log in Pilot Institute in your browser for this to work.
 
 test for embed videos
 
