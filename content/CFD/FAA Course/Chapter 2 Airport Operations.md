@@ -2,16 +2,25 @@
 publish: true
 title: Chapter 2. Airport Operations
 created: 2026-11-17T04:09:57.083Z
-modified: 2026-11-18T18:44:46.796Z
+modified: 2026-11-18T21:40:21.358Z
 ---
 
-> [!faq] Types of Airport
+test for embed videos
+
+<iframe
+  src="https://lms.pilotinstitute.com/class/79/lesson/3976"
+  width="100%"
+  height="500"
+  allowfullscreen>
+</iframe>
+
+> [!faq]+ Types of Airport
 >
 > _Civil -_ open to the public
 > _Military (Federal)_ - no open to the public
 > _Private_ - requires permission from the owner
 
-> [!tip] Towered Airport
+> [!tip]+ Towered Airport+
 >
 > >
 >
@@ -20,7 +29,7 @@ modified: 2026-11-18T18:44:46.796Z
 > - ATC responsible for **safe, orderly, and expeditious FLOW** **of air traffic**
 > - Communication with ATC is required for **ALL** _manned_ aircraft
 
-> [!info] Non-towered Airport
+> [!info]+ Non-towered Airport+
 >
 > - **NO** operating control tower
 > - found at **smaller** airports with low traffic
@@ -30,7 +39,7 @@ modified: 2026-11-18T18:44:46.796Z
 >   - **Common Traffic Advisory Frequency** (CTAF) (more likely use for portable radios)
 >   - **Universal Integrate Community** (UNICOM)
 
-> [!tldr] True VS Magnetic North
+> [!tldr]+ True VS Magnetic North
 >
 > Oriented ourselves by two main references :
 >
@@ -52,3 +61,53 @@ modified: 2026-11-18T18:44:46.796Z
 > "East is LEAST, West is BEST" (subtract east, add west)"
 >
 > _Isogonic Lines_ - Lines of variation (shown on aeronautical charts)
+
+> [!warning]+ Runway Orientation
+>
+> - Runways identify by a 2-digit number that refers to **Magnetic** orientation on EACH side of the runway (Runway identifiers can change based on the changing magnetic north position)
+>
+> - Based on 360 Degree (like a compass rose )
+>   ![[Attachments/Pasted image 20261118135757.png]]
+>
+> \*\*Numbers are pronounced as single digits - eighteen becomes 'one eight' \*\* (helps maintain clarity when static/interference )
+>
+> ![[Attachments/Pasted image 20261118140046.png]]
+>
+> The number shows the direction you are facing (the airplane is facing North, 36)
+>
+> ![[Attachments/Pasted image 20261118140139.png]]Plane is taking off with a heading of "three zero" (technically this is runway "three") but runways are ABBREVIATIONS of actual headings
+>
+> ![[Attachments/Pasted image 20261118140713.png]]
+>
+> Note - HEADINGS are always expressed using three digits,
+>
+> FAA exam tricks:
+>
+> - Multiply the runway number by 10 to get its approximate magnetic heading.
+>
+> - Add or subtract 18 to get its opposite runway number.
+>
+> - Runway 00 does not exist. North is Runway 36.
+>
+> ![[Attachments/Pasted image 20261118140803.png]]
+>
+> Opposite side will have alternate left/right direction (duh)
+
+Traffic Pattern
+
+- Important for operating near an airport
+- Used by pilots to make an **ORFGANIZED** approach to landing
+- Most legs of the pattern are between _surface_ and _1000 feet_ AGL (Above Ground Level)
+- _MSL_ - Mean Sea Level, height of the aircraft above the average sea level
+- Manned pilots will call out approximately **10 MILES AWAY** to request entry in the traffic pattern
+
+![[Attachments/Pasted image 20261118151155.png]]
+
+LEFT PATTERN  (This is the DEFAULT PATTERN, WHEN IN DOUBT, ASSUME LEFT HAND PATTERN), picture has a "_Midfield Entry"_   "Midfield, Left Downwind for Runway 9 "
+
+![[Attachments/Pasted image 20261118151702.png]]
+
+"Midfield, right downwind for Runway 3"
+
+![[Pasted image 20261118151901.png]]
+Right pattern for Runway Two-One  (Note the direction is based on the runway's orientation/heading) "My right, not your right"
