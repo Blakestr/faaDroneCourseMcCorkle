@@ -1,7 +1,7 @@
 ---
 publish: true
 title: FAA Course Notes McCorkle
-created: 2026-11-17T01:59:31.425Z
+created: 2026-11-17T00:43:05.305Z
 modified: 2026-11-17T01:59:31.425Z
 ---
 

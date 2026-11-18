@@ -2,7 +2,7 @@
 publish: true
 title: FAA Study Tag Guide
 description: A practical guide to the tags used throughout the FAA drone pilot study notes.
-created: 2026-11-17T02:43:04.437Z
+created: 2026-11-17T02:42:05.618Z
 modified: 2026-11-17T02:43:04.437Z
 ---
 

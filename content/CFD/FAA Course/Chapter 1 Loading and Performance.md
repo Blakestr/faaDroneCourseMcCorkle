@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Chapter 1 - Loading and Performance
-created: 2026-11-17T04:17:47.524Z
+created: 2026-11-10T18:20:44.069Z
 modified: 2026-11-17T20:35:36.212Z
 ---
 
