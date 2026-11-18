@@ -2,21 +2,8 @@
 publish: true
 title: Chapter 2. Airport Operations
 created: 2026-11-17T04:09:57.083Z
-modified: 2026-11-18T21:52:21.132Z
+modified: 2026-11-18T22:11:50.061Z
 ---
-
-> [!example]+ Video — Traffic Pattern (3D View) <a href="https://lms.pilotinstitute.com/class/79/lesson/3976" >▶ Watch the 3D demonstration</a>
->
-> You need to log in Pilot Institute in your browser for this to work.
-
-test for embed videos
-
-<iframe
-  src="https://lms.pilotinstitute.com/class/79/lesson/3976"
-  width="100%"
-  height="500"
-  allowfullscreen>
-</iframe>
 
 > [!faq]+ Types of Airport
 >
@@ -115,3 +102,7 @@ LEFT PATTERN  (This is the DEFAULT PATTERN, WHEN IN DOUBT, ASSUME LEFT HAND PATT
 
 ![[Pasted image 20261118151901.png]]
 Right pattern for Runway Two-One  (Note the direction is based on the runway's orientation/heading) "My right, not your right"
+
+> [!example]+ Video — Traffic Pattern (3D View) <a href="https://lms.pilotinstitute.com/class/79/lesson/3976" >▶ Watch the 3D demonstration</a>
+>
+> You need to log in Pilot Institute in your browser for this to work.
