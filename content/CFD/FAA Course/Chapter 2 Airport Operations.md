@@ -2,8 +2,10 @@
 publish: true
 title: Chapter 2 Airport Operations
 created: 2026-11-17T04:09:57.083Z
-modified: 2026-11-19T22:28:58.107Z
+modified: 2026-11-19T22:41:54.230Z
 ---
+
+### Types of Airports
 
 > [!faq]+ Types of Airport #FAA/Definition
 >
@@ -27,6 +29,8 @@ modified: 2026-11-19T22:28:58.107Z
 > - Pilots are encouraged to make radio calls using the designated frequency:
 >   - **CTAF (Common Traffic Advisory Frequency)** — more likely to be encountered when using portable aviation radios.
 >   - **UNICOM** — an aeronautical advisory station that may provide airport and traffic information.
+
+### True VS. Magnetic North
 
 > [!tldr]+ True vs. Magnetic North #FAA/Definition #FAA/Exam #FAA/Formula #FAA/Trap
 >
@@ -56,6 +60,8 @@ modified: 2026-11-19T22:28:58.107Z
 > - West variation → ADD.
 >
 > **Isogonic Lines** — lines connecting locations of equal magnetic variation, shown on aeronautical charts.
+
+### Runway Orientation and Layout
 
 > [!warning]+ Runway Orientation #FAA/Exam #FAA/Formula #FAA/Trap
 >
@@ -96,6 +102,8 @@ modified: 2026-11-19T22:28:58.107Z
 > ![[Attachments/Pasted image 20261118140803.png]]
 >
 > With parallel runways, the opposite direction will have reversed left/right designations (duh).
+
+### Traffic Pattern
 
 > [!hint]+ Traffic Pattern #FAA/Exam #FAA/Safety #FAA/Practical
 >
@@ -146,6 +154,8 @@ modified: 2026-11-19T22:28:58.107Z
 > - Short arm represents the **base leg**.
 > - Long arm represents the **final approach/departure direction**.
 
+### Wind Direction
+
 > [!cite]+ Wind Direction Indicators #FAA/Definition #FAA/Exam #FAA/Trap
 >
 > Three indicators:
@@ -164,6 +174,8 @@ modified: 2026-11-19T22:28:58.107Z
 > - Tetrahedron's pointed end indicates the intended landing direction.
 >
 > A tetrahedron is officially a **landing direction indicator**, not necessarily a reliable indication of actual wind direction.
+
+### Airport Signs
 
 > [!hint]+ Airport Signs #FAA/Practical #FAA/Exam #FAA/Trap
 >
@@ -208,6 +220,8 @@ modified: 2026-11-19T22:28:58.107Z
 >
 > Runway 36 (North) is to the left, and Runway 18 (South) is to the right, as depicted in the example.
 
+### Typical FAA Question Part 1
+
 > [!bug] Typical FAA Questions Pt 1 #FAA/Exam #FAA/TodoReview
 >
 > ![[Attachments/Pasted image 20261119105955.png]]
@@ -244,6 +258,8 @@ modified: 2026-11-19T22:28:58.107Z
 >
 > ==Remember: Runways are NUMBERS; taxiways use LETTERS or alphanumeric identifiers.==
 
+### Airport Beacons
+
 > [!tldr]+ Airport Beacon #FAA/Definition #FAA/Exam #FAA/Safety #FAA/Trap
 >
 > Helps identify the location of an airport at **NIGHT** or during **LOW VISIBILITY**.
@@ -270,6 +286,8 @@ modified: 2026-11-19T22:28:58.107Z
 >
 > Under 14 CFR § 107.51, the minimum flight visibility, as observed from the control station, is ==3 statute miles==.
 
+### Operating Near/On Airports
+
 > [!question]+ Operation Near / On Airports #FAA/Exam #FAA/Safety #FAA/Practical #FAA/Trap
 >
 > Operating near an airport does not, by itself, require FAA airspace authorization if you are in uncontrolled airspace.
@@ -291,6 +309,8 @@ modified: 2026-11-19T22:28:58.107Z
 > - Restricted security areas on airport property may include:
 >   - **SIDA (Security Identification Display Area)**.
 >   - Appropriate access credentials or badges are required for unescorted access.
+
+### Other Considerations
 
 > [!info]+ Other Considerations #FAA/Safety #FAA/Practical #FAA/TodoReview
 >
@@ -330,6 +350,8 @@ modified: 2026-11-19T22:28:58.107Z
 > **Unmanned Balloons**
 >
 > Be aware of tethered balloons that may have nearly **INVISIBLE wires** holding them in position.
+
+### Sources of Airport Data - Charts, NOTAMS, ATIS
 
 > [!done]+ Sources of Airport Data #FAA/Exam #FAA/Practical #FAA/Safety
 >
@@ -455,6 +477,8 @@ modified: 2026-11-19T22:28:58.107Z
 > - Visibility is MORE THAN ==5 statute miles==.
 
 ---
+
+### Typical FAA Question Part 2
 
 > [!important]+ Typical FAA Questions
 >
