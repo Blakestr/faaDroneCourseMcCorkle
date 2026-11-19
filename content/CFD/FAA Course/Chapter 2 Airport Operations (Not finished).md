@@ -2,7 +2,7 @@
 publish: true
 title: Chapter 2. Airport Operations
 created: 2026-11-17T04:09:57.083Z
-modified: 2026-11-19T03:46:41.095Z
+modified: 2026-11-19T16:13:38.371Z
 ---
 
 > [!faq]+ Types of Airport
@@ -108,14 +108,44 @@ modified: 2026-11-19T03:46:41.095Z
 >
 > ![[Attachments/Pasted image 20261118175912.png]]He didn't go over this much but it confused me - Chat generated this to help explain it. (Short arm is the base, where you turn, long is the landing/take off)
 
-Wind Direction Indicators
+> [!cite]+ Wind Direction Indicators
+>
+> - Windsock
+> - Tetrahedron
+> - Wind Tee
+>
+>   ![[Attachments/Pasted image 20261118224204.png]]
+> -
+>
+> #FAA/Trap
+> The narrow end of a windsock and the pointed end of a tetrahedron normally face opposite directions. A tetrahedron is officially a landing direction indicator.
 
-- Windsock
-- Tetrahedron
-- Wind Tee
+> [!hint]+ Airport Signs
+> He doesn't mention these being on the exam, more of a "useful to know for parties" 🤨
+>
+> ![[Attachments/Pasted image 20261119102504.png]]![[Attachments/Pasted image 20261119102538.png]]![[Attachments/Pasted image 20261119102716.png]]Right turn to Taxiway A2 (from Taxiway 18)
+>
+> Runway Holding Position Sign - used with the :
+> _hold short line_ - indicates CURRENT TAXIWAY location and **upcoming runway** (red background)
+>
+> ![[Attachments/Pasted image 20261119103258.png]]You can't cross the double solid FROM a taxiway WITHOUT clearance, but you CAN leave the runway (and cross the double) if you are coming FROM the line)
+> ![[Attachments/Pasted image 20261119103408.png]]![[Attachments/Pasted image 20261119103426.png]]Runway - WHITE lettering/lines (except for emergency stop section) - TaiIway = Yellow ()
+>
+> ![[Attachments/Pasted image 20261119104934.png]]
+> Hold Short Line, to Runway Bravo  - where to the left is 36, (North) and the right is 18 (South)
 
-  ![[Attachments/Pasted image 20261118224204.png]]
--
-
-#FAA/Trap
-The narrow end of a windsock and the pointed end of a tetrahedron normally face opposite directions. A tetrahedron is officially a landing direction indicator.
+> [!bug] Typical FAA Questions Pt 1 #FAA/Exam
+>
+> ![[Attachments/Pasted image 20261119105955.png]]Answer - C
+>
+> ![[Attachments/Pasted image 20261119110010.png]]Answer C
+>
+> ![[Attachments/Pasted image 20261119110138.png]]Answer - C Closed Runway
+> ![[Attachments/Pasted image 20261119110238.png]]
+> Answer - C
+> ![[Attachments/Pasted image 20261119110325.png]]Answer - A
+> ![[Attachments/Pasted image 20261119110410.png]]Answer - B (bad visibility)
+>
+> ![[Attachments/Pasted image 20261119110503.png]]![[Attachments/Pasted image 20261119110656.png]]![[Attachments/Pasted image 20261119110708.png]]![[Attachments/Pasted image 20261119110714.png]]![[Attachments/Pasted image 20261119110727.png]]Answer - B
+>
+> **Remember - Runways are NUMBERS, Taxiways are LETTERS**
